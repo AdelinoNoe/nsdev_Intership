@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    width: 100%;
+}
+.fisrt_section,.sencond_section,.third_section,
+.forth_section,.fith_section,.sixth_section,
+.seventh_section,.eigth_section,
+.nineth_section{
+    width:53%;
+    height: 100px;
+    background-color: greenyellow;
+    display: flex;
+    margin-left: 20%;
+    flex-direction: row;
+}
+.sencond_section,.third_section,
+.forth_section,.fith_section,.sixth_section,
+.seventh_section,.eigth_section,
+.nineth_section{
+    margin-top: 20px;
+}
+ 
+
+ .primeiro,.segundo,.terceiro{
+    width: 100px;
+    height: 90px;
+    background-color: yellow;
+    margin-top: 5px;
+}
+
+
+.fisrt_section{
+    justify-content:flex-start;
+}
+.sencond_section{
+    justify-content: flex-end;
+}
+.third_section{
+    justify-content: center;
+}
+.forth_section{
+    justify-content: space-evenly;
+}
+.fith_section{
+    justify-content: space-between;
+}
+
+.fith_section .primeiro{
+  margin-left: 80px;
+}
+.fith_section .segundo{
+  margin-left: 0px;
+}
+.fith_section .terceiro{
+ margin-right: 80px;
+}
+.sixth_section .primeiro, .sixth_section .segundo, .sixth_section .terceiro{
+    margin-left: 5px;
+}
+
+.sixth_section .segundo{
+    height: 45px;
+}
+.sixth_section .terceiro{
+    height: 65px;
+}
+.seventh_section .primeiro, .seventh_section .segundo, .seventh_section .terceiro{
+    margin-left:5px;
+}
+
+.seventh_section .segundo{
+    height: 45px;
+    align-self: center;
+}
+.seventh_section .terceiro{
+    height: 65px;
+    align-self: center;
+}
+.eigth_section .primeiro, .eigth_section .segundo, .eigth_section .terceiro{
+    margin-left:5px;
+}
+
+.eigth_section .segundo{
+    height: 45px;
+    align-self: flex-end;
+}
+.eigth_section .terceiro{
+    height: 65px;
+    align-self: flex-end;
+}
+
+
+.fisrt_section .primeiro, .fisrt_section .segundo, .fisrt_section .terceiro{
+    margin-left: 25px;
+}
+.sencond_section .primeiro, .sencond_section .segundo, .sencond_section .terceiro{
+    margin-right: 25px;
+}
+.third_section .primeiro, .third_section .segundo, .third_section .terceiro{
+    margin-right:25px;
+}
