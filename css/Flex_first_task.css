@@ -9,7 +9,7 @@
 .forth_section,.fith_section,.sixth_section,
 .seventh_section,.eigth_section,
 .nineth_section{
-    width:53%;
+    width:50%;
     height: 100px;
     background-color: greenyellow;
     display: flex;
@@ -41,22 +41,24 @@
 .third_section{
     justify-content: center;
 }
-.forth_section{
-    justify-content: space-evenly;
-}
-.fith_section{
-    justify-content: space-between;
+
+.third_section .segundo, .third_section .terceiro{
+    margin-left: 30px;
 }
 
-.fith_section .primeiro{
-  margin-left: 80px;
+.forth_section{
+    justify-content: space-between;
 }
-.fith_section .segundo{
-  margin-left: 0px;
+.forth_section .primeiro{
+    margin-left: 100px;
+} 
+.forth_section .terceiro{
+    margin-right: 100px;
 }
-.fith_section .terceiro{
- margin-right: 80px;
+.fith_section{
+    justify-content: space-around;
 }
+
 .sixth_section .primeiro, .sixth_section .segundo, .sixth_section .terceiro{
     margin-left: 5px;
 }
@@ -86,10 +88,12 @@
 .eigth_section .segundo{
     height: 45px;
     align-self: flex-end;
+    margin-bottom: 5px;
 }
 .eigth_section .terceiro{
     height: 65px;
     align-self: flex-end;
+    margin-bottom: 5px;
 }
 
 
@@ -99,6 +103,4 @@
 .sencond_section .primeiro, .sencond_section .segundo, .sencond_section .terceiro{
     margin-right: 25px;
 }
-.third_section .primeiro, .third_section .segundo, .third_section .terceiro{
-    margin-right:25px;
-}
+
