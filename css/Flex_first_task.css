@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
+/*  conteudo da div principal*/
 .principal{
     width: 100%;
 }
+/* tratamento das sections da div Princiepal, atribuindo as devidas especificaç]oes*/
 .fisrt_section,.sencond_section,.third_section,
 .forth_section,.fith_section,.sixth_section,
 .seventh_section,.eigth_section,
@@ -16,6 +18,7 @@
     margin-left: 20%;
     flex-direction: row;
 }
+/*Atribuir margem superior  nas section*/
 .sencond_section,.third_section,
 .forth_section,.fith_section,.sixth_section,
 .seventh_section,.eigth_section,
@@ -23,7 +26,7 @@
     margin-top: 20px;
 }
  
-
+/*Atribuindo as especificações nos elementos que estão dentro das sections */
  .primeiro,.segundo,.terceiro{
     width: 100px;
     height: 90px;
@@ -31,7 +34,7 @@
     margin-top: 5px;
 }
 
-
+/*atribuindo propriedade de flex nos conteudos*/
 .fisrt_section{
     justify-content:flex-start;
 }
@@ -41,6 +44,7 @@
 .third_section{
     justify-content: center;
 }
+/*atribuindo margens nos elementos que se encontram dentro das sections Third_section*/
 
 .third_section .segundo, .third_section .terceiro{
     margin-left: 30px;
@@ -49,57 +53,66 @@
 .forth_section{
     justify-content: space-between;
 }
+/*atribuindo margens nos elementos que se encontram dentro das sections forth_section*/
 .forth_section .primeiro{
     margin-left: 100px;
 } 
 .forth_section .terceiro{
     margin-right: 100px;
 }
+/*atribuindo propriedade de flex nos conteudos*/
 .fith_section{
     justify-content: space-around;
 }
 
+/*atribuindo margens nos elementos que se encontram dentro das sections sixth_section*/
 .sixth_section .primeiro, .sixth_section .segundo, .sixth_section .terceiro{
     margin-left: 5px;
 }
 
+/*Atribuindo altura no elemento que se encontram dentro das sections sixth_section */
 .sixth_section .segundo{
     height: 45px;
 }
 .sixth_section .terceiro{
     height: 65px;
 }
+/*atribuindo margens nos elementos que se encontram dentro das sections seventh_section*/
 .seventh_section .primeiro, .seventh_section .segundo, .seventh_section .terceiro{
     margin-left:5px;
 }
 
+/*Atribuindo altura no elemento que se encontram dentro das sections sixth_section */
 .seventh_section .segundo{
     height: 45px;
-    align-self: center;
 }
+/*Atribuindo altura e alinhamento,no elemento que se encontram dentro das sections sixth_section */
 .seventh_section .terceiro{
     height: 65px;
     align-self: center;
 }
+/*atribuindo margens nos elementos que se encontram dentro das sections eigth_section*/
 .eigth_section .primeiro, .eigth_section .segundo, .eigth_section .terceiro{
     margin-left:5px;
 }
-
+/*Atribuindo altura,alinhamento e margem inferior ,no elemento que se encontram dentro das sections sixth_section */
 .eigth_section .segundo{
     height: 45px;
     align-self: flex-end;
     margin-bottom: 5px;
 }
+/*Atribuindo altura,alinhamento e margem inferior ,no elemento que se encontram dentro das sections sixth_section */
 .eigth_section .terceiro{
     height: 65px;
     align-self: flex-end;
     margin-bottom: 5px;
 }
 
-
+/*Atribuindo  margem no nos elementos dentro da section First_section*/
 .fisrt_section .primeiro, .fisrt_section .segundo, .fisrt_section .terceiro{
     margin-left: 25px;
 }
+/*Atribuindo  margem no nos elementos dentro da section second_section*/
 .sencond_section .primeiro, .sencond_section .segundo, .sencond_section .terceiro{
     margin-right: 25px;
 }
