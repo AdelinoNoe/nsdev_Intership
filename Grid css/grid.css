@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+   /* grid-template-areas: "a a a a a a"*/
+   grid-gap: 15px;
+    
+}
+.A{
+  
+    grid-column: 1/7;
+    height: 60px;
+    border: 2px  solid red;
+    text-align: center;
+}
+.B{
+    
+    border: 2px  solid red;
+    grid-column: 2/6;
+    height: 60px;
+    text-align: center;
+    
+}
+.C{
+    
+    border: 2px  solid red;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    text-align: center;
+}
+.D{
+    border: 2px  solid red;
+    grid-column:2/6 ;
+    height: 400px;
+    text-align: center;
+}
+.E{
+
+    border: 2px  solid red;
+    grid-column: 6/7;
+    grid-row: 2/4;
+    text-align: center;
+}
+    
+.F{    
+    border: 2px  solid red;
+    grid-column: 1/7;
+    height: 60px;
+    text-align: center;
+    
+}
+
+p{
+    font-size: 40px;
+}
+.A p,.F p, .B p{
+    margin-top: 10px;
+}
+.C p,.E p{
+    margin-top: 200px;
+}
+.D p{
+    margin-top: 150px;
+}
+
+@media screen and (max-width:600px) and (min-width:450px) 
+ {
+     
+    .A{
+  
+        grid-column: 1/7;
+        height: 60px;
+        border: 2px  solid red;
+        text-align: center;
+    }
+    .B{
+        grid-column: 1/7;
+        grid-row: 2/2;
+    }
+    .C{
+        grid-row: 3/4;
+    }
+    .D{
+        grid-column: 2/7;
+    }
+    .E{
+        grid-column: 1/2;
+        grid-row: 4/4;
+        height: 60px;
+    }
+    .F{
+        grid-column: 2/7;
+    }
+    .E p{
+        margin-top:5px;
+    }
+}
+@media screen and (max-width:449px) {
+    .container{
+        width: 80%;
+    }
+    .A,.B,.C,.D,.E,.F{
+        width: 99%;
+    }
+    .A{
+        height: 30px;
+    }
+    .B{
+       grid-column: 1/7;
+       grid-row: 2/2;
+       height: 30px;
+    }
+    .C{
+        grid-column: 1/7;
+        grid-row: 5/6;
+        height: 30px;
+    }
+    .E{
+        grid-column: 1/7;
+        grid-row: 6/7;
+        height: 30px;
+    }
+    .D{
+        grid-column: 1/7;
+        height: 70px;
+        
+    }
+    .F{
+        grid-column: 1/7;
+        grid-row: 7/7;
+    }
+    p{
+        font-size: 20px;
+        
+    }
+    .C p,.E p{
+        margin-top: 0;
+    }
+    .D p{
+        margin-top: 0;
+    }
+
+}
+
+    
